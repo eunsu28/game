@@ -3,8 +3,9 @@ import pygame
 
 pygame.init()
 
-holo = 800
-screen = pygame.display.set_mode((holo, holo))
+hight = 800
+width = 600
+screen = pygame.display.set_mode((width, hight))
 
 running = True
 
