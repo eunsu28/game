@@ -2,6 +2,7 @@ from typing_extensions import runtime
 import pygame
 
 pygame.init()
+pygame.display.set_caption("게임")
 
 hight = 800
 width = 1000
