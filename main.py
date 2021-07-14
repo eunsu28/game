@@ -1,4 +1,3 @@
-from typing_extensions import runtime
 import pygame
 
 pygame.init()
@@ -13,9 +12,9 @@ screen = pygame.display.set_mode((width, hight))
 #케릭터 불러오기
 background = pygame.image.load("img/b.png")
 charactor = pygame.image.load("img/c.png")
+#불러오기
 
 running = True
-
 while running:
     for event in pygame.event.get(): 
         if event.type == pygame.QUIT: 
@@ -23,7 +22,9 @@ while running:
 
     pygame.display.update()
 
-    screen.blit(background, (0, 0))
+#blit
     screen.blit(charactor, ((width / 2), 800))
+    screen.blit(background, (0, 0))
+#blit
 
 pygame.quit()
