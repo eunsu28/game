@@ -44,14 +44,14 @@ while running:
             elif event.key == pygame.K_UP or pygame.K_DOWN:
                 y = 0
 
-    s_x += x * dt
-    s_y += y * dt
-
-
-#blit
-    screen.blit(background, (0, 0))
-    screen.blit(charactor, ((width / 2.25), 400))
-#blit
+    s_x += x 
+    s_y += y 
 
     pygame.display.update()
+#blit
+    screen.blit(background, (0, 0))
+    screen.blit(charactor, (s_x, s_y))
+#blit
+
+
 pygame.quit()
