@@ -41,7 +41,8 @@ while running:
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or pygame.K_RIGHT:
                 x = 0
-            elif event.key == pygame.K_UP or pygame.K_DOWN:
+        if event.type == pygame.KEYUP:
+            if event.key == pygame.K_UP or pygame.K_DOWN:
                 y = 0
 
     s_x += x 
