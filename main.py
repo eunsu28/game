@@ -34,6 +34,12 @@ while running:
             elif event.key == pygame.K_DOWN:
                 y += 10
 
+        if event.type == pygame.KEYUP:
+            if event.key == pygame.K_LEFT or pygame.K_RIGHT:
+                character_move = 0
+            elif event.key == pygame.K_UP or pygame.K_DOWN:
+                character_move_y = 0
+
     pygame.display.update()
 
 #blit
