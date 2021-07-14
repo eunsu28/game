@@ -2,6 +2,7 @@ import pygame
 
 pygame.init()
 pygame.display.set_caption("게임")
+clock = pygame.time.Clock()
 
 #스크린
 hight = 600
@@ -15,11 +16,14 @@ charactor = pygame.image.load("img/c.png")
 #불러오기
 
 #캐릭터 관련 정보
-x = width / 2.25
-y = 400
+s_x = width / 2.25
+s_y = 400
+x = 0
+y = 0
 
 running = True
 while running:
+    dt = clock.tick(60) 
     for event in pygame.event.get(): 
         if event.type == pygame.QUIT: 
             running = False 
@@ -36,15 +40,18 @@ while running:
 
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or pygame.K_RIGHT:
-                character_move = 0
+                x = 0
             elif event.key == pygame.K_UP or pygame.K_DOWN:
-                character_move_y = 0
+                y = 0
 
-    pygame.display.update()
+    s_x += x * dt
+    s_y += y * dt
+
 
 #blit
     screen.blit(background, (0, 0))
     screen.blit(charactor, ((width / 2.25), 400))
 #blit
 
+    pygame.display.update()
 pygame.quit()
