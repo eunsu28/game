@@ -4,7 +4,7 @@ pygame.init()
 pygame.display.set_caption("게임")
 
 #스크린
-hight = 800
+hight = 600
 width = 1000
 screen = pygame.display.set_mode((width, hight))
 #스크린
@@ -23,8 +23,8 @@ while running:
     pygame.display.update()
 
 #blit
-    screen.blit(charactor, ((width / 2), 800))
     screen.blit(background, (0, 0))
+    screen.blit(charactor, ((width / 2.25), 400))
 #blit
 
 pygame.quit()
