@@ -4,18 +4,18 @@ pygame.init()
 pygame.display.set_caption("game")
 clock = pygame.time.Clock()
 
-#스크린
+#
 height = 750
 width = 1000
 screen = pygame.display.set_mode((width, height))
-#스크린
+#
 
-#케릭터 불러오기
+#
 background = pygame.image.load("img/b.png")
 charactor = pygame.image.load("img/c.png")
-#불러오기
+#
 
-#캐릭터 관련 정보
+#
 s_x = width / 2.25
 s_y = 400
 x = 0
