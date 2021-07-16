@@ -1,7 +1,7 @@
 import pygame
 
 pygame.init()
-pygame.display.set_caption("게임")
+pygame.display.set_caption("game")
 clock = pygame.time.Clock()
 
 #스크린
