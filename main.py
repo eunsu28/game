@@ -12,7 +12,7 @@ screen = pygame.display.set_mode((width, height))
 
 #
 background = pygame.image.load("img/b.png")
-charactor = pygame.image.load("img/c.png")
+charactor = pygame.image.load("img/c.jpg")
 #
 
 #
@@ -30,13 +30,13 @@ while running:
         
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_a:
-                x -= 50
+                x -= 10
             elif event.key == pygame.K_d:
-                x += 50
+                x += 10
             elif event.key == pygame.K_w:
-                y -= 50
+                y -= 10
             elif event.key == pygame.K_s:
-                y += 50
+                y += 10
 
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_a or pygame.K_d:
