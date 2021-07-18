@@ -1,4 +1,5 @@
 import pygame
+#remember commend d
 
 pygame.init()
 pygame.display.set_caption("game")
