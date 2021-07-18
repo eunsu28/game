@@ -51,13 +51,13 @@ while running:
 
     if s_x < 0:
         s_x = 0 
-    elif s_x > width - 100:
-        s_x = width - 100
+    elif s_x > width - 10:
+        s_x = width - 10
 
     if s_y < 0:
         s_y = 0 
-    elif s_y > height - 200:
-        s_y = height - 200
+    elif s_y > height - 20:
+        s_y = height - 20
 
     pygame.display.update()
 #blit
