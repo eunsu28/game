@@ -16,7 +16,7 @@ charactor = pygame.image.load("img/c.jpg")
 #
 
 #
-s_x = width / 2.25
+s_x = width / 2
 s_y = 400
 x = 0
 y = 0
@@ -46,7 +46,7 @@ while running:
                 y = 0
 
     s_x += x 
-    s_y += y 
+    s_y += y
 
     if s_x < 0:
         s_x = 0 
