@@ -14,6 +14,7 @@ screen = pygame.display.set_mode((width, height))
 #
 background = pygame.image.load("img/b.png")
 charactor = pygame.image.load("img/c.jpg")
+bad = pygame.image.load("img/bad.png")
 #
 
 #
