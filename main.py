@@ -6,32 +6,41 @@ pygame.init()
 pygame.display.set_caption("game")
 clock = pygame.time.Clock()
 
-#
+# 스크린
 height = 750
 width = 1000
 screen = pygame.display.set_mode((width, height))
 #
 
-#
+# 사진 불러오기
 background = pygame.image.load("img/b.png")
 charactor = pygame.image.load("img/c.jpg")
 bad = pygame.image.load("img/bad.png")
 #
 
-#
+# 캐릭터 설정
 s_x = width / 2
 s_y = 400
 x = 0
 y = 0
 #
 
-#
+# 장애물 설정
 b_s_x = random.randint(1, 1001)
 b_s_y = random.randint(1, 751)
 #
 
+# 시간 설정
+t_time = 10
+start_ticks = pygame.time.get_ticks()
+#
+
 running = True
 while running:
+
+    time = (pygame.time.get_ticks() - start_ticks) / 1000
+    get_time = t_time - time
+
     dt = clock.tick(60) 
     for event in pygame.event.get(): 
         if event.type == pygame.QUIT: 
@@ -74,5 +83,6 @@ while running:
     screen.blit(bad, (b_s_x, b_s_y))
 #blit
 
+    print(get_time)
 
 pygame.quit()
