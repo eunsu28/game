@@ -1,4 +1,5 @@
 import pygame
+import random
 #remember commend d
 
 pygame.init()
@@ -22,6 +23,12 @@ s_x = width / 2
 s_y = 400
 x = 0
 y = 0
+#
+
+#
+b_s_x = random.randint(1, 1001)
+b_s_y = random.randint(1, 751)
+#
 
 running = True
 while running:
@@ -64,6 +71,7 @@ while running:
 #blit
     screen.blit(background, (0, 0))
     screen.blit(charactor, (s_x, s_y))
+    screen.blit(bad, (b_s_x, b_s_y))
 #blit
 
 
