@@ -85,4 +85,9 @@ while running:
 
     print(get_time)
 
+    if t_time - time < 0:
+        b_s_x = random.randint(1, 1001)
+        b_s_y = random.randint(1, 751)
+        running = False
+
 pygame.quit()
