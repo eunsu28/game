@@ -31,7 +31,7 @@ b_s_y = random.randint(1, 751)
 #
 
 # 시간 설정
-t_time = 10
+t_time = 2
 start_ticks = pygame.time.get_ticks()
 #
 
@@ -86,8 +86,8 @@ while running:
     print(get_time)
 
     if t_time - time < 0:
-        b_s_x = random.randint(1, 1001)
-        b_s_y = random.randint(1, 751)
+        b_s_x = random.randint(1, 901)
+        b_s_y = random.randint(1, 725)
         start_ticks = pygame.time.get_ticks()
         time = (pygame.time.get_ticks() - start_ticks) / 1000
         get_time = t_time - time
