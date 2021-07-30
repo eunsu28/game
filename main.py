@@ -88,6 +88,8 @@ while running:
     if t_time - time < 0:
         b_s_x = random.randint(1, 1001)
         b_s_y = random.randint(1, 751)
-        running = False
+        start_ticks = pygame.time.get_ticks()
+        time = (pygame.time.get_ticks() - start_ticks) / 1000
+        get_time = t_time - time
 
 pygame.quit()
