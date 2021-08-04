@@ -85,6 +85,7 @@ while running:
 
     print(get_time)
 
+#무한반복
     if t_time - time < 0:
         b_s_x = random.randint(1, 901)
         b_s_y = random.randint(1, 725)
@@ -93,3 +94,4 @@ while running:
         get_time = t_time - time
 
 pygame.quit()
+#8/4 rect구하기
