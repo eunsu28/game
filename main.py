@@ -83,8 +83,6 @@ while running:
     screen.blit(bad, (b_s_x, b_s_y))
 #blit
 
-    print(get_time)
-
 #무한반복
     if t_time - time < 0:
         b_s_x = random.randint(1, 901)
