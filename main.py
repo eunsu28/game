@@ -86,6 +86,13 @@ while running:
     b_r.top = b_s_y
 #rect
 
+#충돌
+    if c_r.colliderect(b_r):
+        print("1번에 충돌했어요^^")
+        running = False
+        print(get_time)
+#충돌
+
     pygame.display.update()
 #blit
     screen.blit(background, (0, 0))
