@@ -16,6 +16,7 @@ screen = pygame.display.set_mode((width, height))
 background = pygame.image.load("img/b.png")
 character = pygame.image.load("img/c.jpg")
 bad = pygame.image.load("img/bad.png")
+gameover = pygame.image.load("img/gameover.png")
 #
 
 # 캐릭터 설정
@@ -89,6 +90,7 @@ while running:
 #충돌
     if c_r.colliderect(b_r):
         print("1번에 충돌했어요^^")
+        screen.blit(gameover, (0, 0))
         running = False
 #충돌
 
