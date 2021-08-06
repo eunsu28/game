@@ -90,7 +90,6 @@ while running:
     if c_r.colliderect(b_r):
         print("1번에 충돌했어요^^")
         running = False
-        print(get_time)
 #충돌
 
     pygame.display.update()
@@ -108,5 +107,7 @@ while running:
         time = (pygame.time.get_ticks() - start_ticks) / 1000
         get_time = t_time - time
 
+
+pygame.time.delay(2000)
 pygame.quit()
 #8/4 rect구하기
