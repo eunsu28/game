@@ -14,13 +14,13 @@ screen = pygame.display.set_mode((width, height))
 
 # 사진 불러오기
 background = pygame.image.load("img/b.png")
-charactor = pygame.image.load("img/c.jpg")
+character = pygame.image.load("img/c.jpg")
 bad = pygame.image.load("img/bad.png")
 #
 
 # 캐릭터 설정
-s_x = width / 2
-s_y = 400
+s_x = width / 2 #starting x position
+s_y = 400 # y position 
 x = 0
 y = 0
 #
@@ -76,10 +76,20 @@ while running:
     elif s_y > height - 20:
         s_y = height - 20
 
+#rect
+    c_r = character.get_rect()
+    c_r.left = s_x
+    c_r.top = s_y
+
+    b_r = bad.get_rect()
+    b_r.left = b_s_x 
+    b_r.top = b_s_y
+#rect
+
     pygame.display.update()
 #blit
     screen.blit(background, (0, 0))
-    screen.blit(charactor, (s_x, s_y))
+    screen.blit(character, (s_x, s_y))
     screen.blit(bad, (b_s_x, b_s_y))
 #blit
 
