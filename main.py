@@ -29,6 +29,9 @@ y = 0
 # 장애물 설정
 b_s_x = random.randint(1, 1001)
 b_s_y = random.randint(1, 751)
+
+b_s_x2 = random.randint(1, 1001)
+b_s_y2 = random.randint(1, 751)
 #
 
 # 시간 설정
@@ -99,12 +102,15 @@ while running:
     screen.blit(background, (0, 0))
     screen.blit(character, (s_x, s_y))
     screen.blit(bad, (b_s_x, b_s_y))
+    screen.blit(bad, (b_s_x2, b_s_y2))
 #blit
 
 #무한반복
     if t_time - time < 0:
         b_s_x = random.randint(1, 901)
         b_s_y = random.randint(1, 725)
+        b_s_x2 = random.randint(1, 1001)
+        b_s_y2 = random.randint(1, 751)
         start_ticks = pygame.time.get_ticks()
         time = (pygame.time.get_ticks() - start_ticks) / 1000
         get_time = t_time - time
