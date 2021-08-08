@@ -51,13 +51,13 @@ while running:
             running = False 
         
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_a:
+            if event.key == pygame.K_LEFT:
                 x -= 10
-            elif event.key == pygame.K_d:
+            elif event.key == pygame.K_RIGHT:
                 x += 10
-            elif event.key == pygame.K_w:
+            elif event.key == pygame.K_UP:
                 y -= 10
-            elif event.key == pygame.K_s:
+            elif event.key == pygame.K_DOWN:
                 y += 10
 
         if event.type == pygame.KEYUP:
