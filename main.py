@@ -123,6 +123,20 @@ while running:
         start_ticks = pygame.time.get_ticks()
         time = (pygame.time.get_ticks() - start_ticks) / 1000
         get_time = t_time - time
+#
+
+#replaying
+    if running == False:
+        pygame.time.delay(1000)
+        b_s_x = random.randint(1, 901)
+        b_s_y = random.randint(1, 725)
+        b_s_x2 = random.randint(1, 1001)
+        b_s_y2 = random.randint(1, 751)
+        start_ticks = pygame.time.get_ticks()
+        time = (pygame.time.get_ticks() - start_ticks) / 1000
+        get_time = t_time - time
+        print("replay")
+        running = True
 
 
 pygame.time.delay(2000)
