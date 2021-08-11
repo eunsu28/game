@@ -88,11 +88,20 @@ while running:
     b_r = bad.get_rect()
     b_r.left = b_s_x 
     b_r.top = b_s_y
+
+    b_r2 = bad.get_rect()
+    b_r2.left = b_s_x2 
+    b_r2.top = b_s_y2
 #rect
 
 #충돌
     if c_r.colliderect(b_r):
         print("1번에 충돌했어요^^")
+        screen.blit(gameover, (0, 0))
+        running = False
+
+    if c_r.colliderect(b_r2):
+        print("2번에 충돌했어요^^")
         screen.blit(gameover, (0, 0))
         running = False
 #충돌
