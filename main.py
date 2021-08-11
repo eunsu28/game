@@ -41,7 +41,7 @@ start_ticks = pygame.time.get_ticks()
 
 running = True
 run = True
-while running or run:
+while run:
 
     time = (pygame.time.get_ticks() - start_ticks) / 1000
     get_time = t_time - time
@@ -49,7 +49,7 @@ while running or run:
     dt = clock.tick(60) 
     for event in pygame.event.get(): 
         if event.type == pygame.QUIT: 
-            run = False 
+            run = False
         
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
