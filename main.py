@@ -133,13 +133,13 @@ while run:
         b_s_y = random.randint(1, 725)
         b_s_x2 = random.randint(1, 1001)
         b_s_y2 = random.randint(1, 751)
+        s_x = width / 2 #starting x position
+        s_y = 400 # y position 
         start_ticks = pygame.time.get_ticks()
         time = (pygame.time.get_ticks() - start_ticks) / 1000
         get_time = t_time - time
         print("replay")
         running = True
 
-
-pygame.time.delay(2000)
 pygame.quit()
 #8/4 rect구하기
